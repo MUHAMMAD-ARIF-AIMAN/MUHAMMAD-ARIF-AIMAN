@@ -1,0 +1,41 @@
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.arrows {
+    text-align: center;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    position: relative;
+    animation-name: button;
+    animation-duration: 5s;
+}
+
+body.light-dark .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+@keyframes button {
+    0%   {left:0px; top:450px;}
+    100%  {left:0%; top:0px;}
+}

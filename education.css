@@ -1,0 +1,101 @@
+body {
+    background-color: lightblue;
+    transition: all ease-in-out 0.5s;
+
+}
+
+body.light-dark {
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+
+.edu {
+    font-size: 60px;
+    position: relative;
+    animation-name: edu;
+    animation-duration: 4s;
+}
+
+@keyframes edu {
+    0%   {left:-450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}
+
+.container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.sk, .smk, .uni {
+    margin: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: justify;
+}
+
+.sk-text, .uni-text {
+    position: relative;
+    margin-right: 20px;
+    animation-name: text1;
+    animation-duration: 5s;
+}
+
+@keyframes text1 {
+    0%   {left:-450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}
+
+.smk-text {
+    position: relative;
+    margin-left: 20px;
+    animation-name: text2;
+    animation-duration: 5s;
+}
+
+@keyframes text2 {
+    0%   {left:450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}
+
+.sk-image, .uni-image {
+    position: relative;
+    width: 220px;
+    height: 170px;
+    padding: 2px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    animation-name: gambar1;
+    animation-duration: 7s;
+}
+
+.sk-image:hover, .uni-image:hover {
+    transform: scale(1.2);
+    transition: ease 0.5s;
+}
+
+@keyframes gambar1 {
+    0%   {left:450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}
+
+.smk-image {
+    position: relative;
+    width: 220px;
+    height: 170px;
+    padding: 2px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    animation-name: gambar2;
+    animation-duration: 7s;
+}
+
+.smk-image:hover {
+    transform: scale(1.2);
+    transition: ease 0.5s;
+}
+
+@keyframes gambar2 {
+    0%   {left:-450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}

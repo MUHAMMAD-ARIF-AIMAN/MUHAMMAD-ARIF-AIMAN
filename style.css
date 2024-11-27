@@ -1,0 +1,95 @@
+body {
+    text-align: center;
+    font-size: 30px;
+    background-color: lightblue;
+    color: black;
+    transition: all ease-in-out 0.5s;
+}
+
+body.light-dark {
+    background-color: black;
+    color: white;
+    transition: ease 0.5s;
+}
+
+h1 {
+    color: inherit;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    transition: ease 0.5s;
+    top: 0;
+  }
+  
+.grid-container {
+    margin: 0 auto;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    }
+  
+.grid-item {
+    width: 10%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: all ease-in-out 0.5s;
+    background-color: #f28500;
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: "Brush Script MT";
+}
+
+.grid-item:nth-child(3n+1) {
+    background-color: #ebb0ff;
+}
+
+.grid-item:nth-child(3n+2) {
+    background-color: #b4d9ef;
+}
+.grid-item:nth-child(3n+3) {
+    background-color: #114b5f;
+}
+
+.grid-item:hover {
+    width: 25%;
+    text-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    }    
+
+body.light-dark .grid-item {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+body.light-dark .grid-item:nth-child(3n+1) {
+    background-color: #7e6551;
+}
+body.light-dark .grid-item:nth-child(3n+2) {
+    background-color: #ff5349;
+}
+body.light-dark .grid-item:nth-child(3n+3) {
+    background-color: #272727;
+}
+
+button {
+    background-color: inherit;
+    font-size: 30px;
+    padding: 10px 10px;
+    box-shadow: 0px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out 0.5s;
+    border: none;
+}
+
+body.light-dark button {
+    text-shadow: 0px 4px 8px rgba(255, 255, 255, 0.4);
+}

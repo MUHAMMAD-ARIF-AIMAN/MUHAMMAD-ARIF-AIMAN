@@ -1,0 +1,121 @@
+body {
+    background-color: lightblue;
+    transition: all ease-in-out 0.5s;
+}
+
+body.light-dark {
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+
+.bio {
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    animation-name: bio;
+    animation-duration: 4s;
+}
+
+@keyframes bio {
+    0%   {left:-450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}
+
+.image_box {
+    text-align: center;
+}
+
+.image_box:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 0.5s;
+}
+
+.Gambar_Diri {
+    width: 120px;
+    height: auto;
+    margin: auto;
+    padding: 2px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    position: relative;
+    animation-name: gambar;
+    animation-duration: 5s;
+}
+
+@keyframes gambar {
+    0%   {left:-450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}
+
+.nama {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    animation-name: nama;
+    animation-duration: 4s;
+}
+
+@keyframes nama {
+    0%   {left:-450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}
+
+.tempat {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    animation-name: tempat;
+    animation-duration: 4s;
+}
+
+.tempat:hover {
+    text-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes tempat {
+    0%   {left:450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}
+
+.sekolah {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    animation-name: sekolah;
+    animation-duration: 4s;
+}
+
+.sekolah:hover {
+    text-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes sekolah {
+    0%   {left:0px; top:450px;}
+    100%  {left:0%; top:0px;}
+}
+
+.image_box2 {
+    text-align: center;
+}
+
+.image_box2:hover {
+    transform: scale(1.2);
+    transition: ease 0.5s;
+}
+
+.Gambar_Sekolah {
+    position: relative;
+    padding: 2px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    animation-name: sekolah;
+    animation-duration: 5s;
+}
+
+.smk-image {
+    width: 220px;
+    height: 170px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

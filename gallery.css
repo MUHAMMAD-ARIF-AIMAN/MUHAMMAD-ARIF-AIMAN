@@ -1,0 +1,79 @@
+body {
+    background-color: lightblue;
+    color: black;
+    transition: ease 0.5s;
+}
+
+body.light-dark {
+    background-color: black;
+    color: white;
+    transition: ease 0.5s;
+}
+
+h1 {
+    text-align: center;
+}
+
+.figure img {
+    position: relative;
+    width: 220px;
+    height: 170px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    transition: ease 0.5s;
+    padding: 2px;
+    animation-name: gambar;
+    animation-duration: 5s;
+}
+
+@keyframes gambar {
+        0%   {left:-450px; top:0px;}
+        100%  {left:0%; top:0px;}
+}
+
+.figure img:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 0.5s;
+}
+
+.figure .passport {
+    position: relative;
+    width: 120px;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    text-align: center;
+}
+
+body.light-dark img {
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+figure a {
+    position: relative;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: blue;
+}
+
+body.light-dark .link {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,63 @@
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    transition: all ease-in-out 0.5s;
+}
+
+body.light-dark header {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    transition: all ease-in-out 0.5s;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+    position: relative;
+}
+
+nav ul li button {
+    background-color: inherit;
+    font-size: 40px;
+    box-shadow: 0px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul li button:hover .light-dark button {
+    text-shadow: 0px 4px 8px rgba(255, 255, 255, 0.4);
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: aqua;
+}
+
+body.light-dark nav ul li a{
+    color: white;
+}

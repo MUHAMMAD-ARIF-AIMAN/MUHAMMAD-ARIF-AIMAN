@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    transition: ease 0.5s;
+}
+
+body.light-dark {
+    background-color: black;
+    color: white;
+    transition: ease 0.5s;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    animation-name: experience;
+    animation-duration: 5s;
+}
+
+@keyframes experience {
+    0%   {left:-450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}
+
+table {
+    position: relative;
+    width: 100%; 
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation-name: kotak;
+    animation-duration: 5s;
+}
+
+@keyframes kotak {
+    0%   {left:450px; top:0px;}
+    100%  {left:0%; top:0px;}
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50; 
+    color: white; 
+}
+
+tr {
+    background-color: olivedrab;
+}
+
+body.light-dark tr {
+    color: white;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+body.light-dark tr:hover {
+    background-color: #dddddd50;
+    color: black;
+}

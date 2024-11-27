@@ -1,0 +1,20 @@
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-style: transparent;
+    border-width: 1px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    border-color: white;
+    transition: ease 0.3s;
+    font-size: 30px;
+}
+
+body.light-dark footer {
+    background-color: black;
+    color: white;
+    border-color: black;
+    transition: ease 0.3s;
+}
